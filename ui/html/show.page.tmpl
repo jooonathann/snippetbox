@@ -3,6 +3,7 @@
 {{define "title"}}Snippet #{{.Snippet.ID}}{{end}}
 
 {{define "body"}}
+    {{with .Snippet}}
     <div class="snippet">
         <div class="metadata">
             <strong>{{.Snippet.Title}}</strong>
@@ -15,5 +16,6 @@
         </div>
     </div>
     {{end}}
+{{end}}
 
 
